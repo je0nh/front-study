@@ -1,0 +1,83 @@
+.profile {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 30px;
+    font-family: 'gulim';
+    color: #424242;
+    text-align: center
+}
+
+.content {
+    text-align: center;
+}
+
+.box {
+    width: 400px;
+    height: 120px;
+    margin: 30px;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.container {
+    width: 800px;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background: aquamarine;
+}
+
+.left-menu {
+    width: 20%;
+    height: 400px;
+    background: cornflowerblue;
+    /* float: 요소를 띄어서 왼쪽 정렬, 박스를 가로로 배치할 때 사용 */
+    /* float: left; */
+    /* inline-block: 내 크기만큼 차지 */
+    display: inline-block;
+    /* 상하정렬 */
+    vertical-align: top;
+}
+
+.right-menu {
+    width: 80%;
+    height: 400px;
+    background: coral;
+    /* float: left; */
+    display: inline-block;
+}
+
+/* float를 앞에서 줬기 때문에 앞의 div들이 공중에 떠 있는 상태
+footer이 위의 div 상자 아래에 있음 */
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    /* float 다음에 오는 요소에게 주면 위의 이상현상 해결가능 */
+    /* clear: both; */
+    display: inline-block;
+}
+
+/* .어쩌고 없이 p라고 하면 html에서 p테그는 전부 이 스타일대로 변경 */
+/* p {
+    font-size: 20;
+    color: red;
+} */
+
+#special {
+    font-size: 20;
+    color: #424242;
+}
