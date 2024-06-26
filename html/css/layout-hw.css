@@ -67,3 +67,22 @@
     font-size: 10px;
     color: gray;
 }
+
+/* css 셀렉터 사용하기 */
+.navbar li{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* 바로 밑 자식들만 */
+.navbar_>li{
+    display: inline-block;
+}
+
+.navbar a{
+    font-size: 16px;
+    text-decoration: none;
+}
