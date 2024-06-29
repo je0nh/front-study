@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <h1 id="hello">안녕하세요</h1>
+    <h1 id="hi">JS 초보에요</h1>
+
+    <div class="alert-box" id="alert">알림창</div>
+    <button onclick="alertButton('block')">버튼</button>
+    <button id="close">닫기</button>
+
+    <div class="alert-box" id="login">
+        <p></p>
+    </div>
+    <button onclick="loginButton('login', '아이디를 입력하세요', 'block')">버튼1</button>
+    <button onclick="loginButton('login', '비밀번호를 입력하세요', 'block')">버튼2</button>
+
+
+    <script>
+        document.getElementById('close').addEventListener("click", function () {
+            document.getElementById('alert').style.display = 'none';
+        })
+
+        document.getElementById('hello').innerHTML = '안녕';
+        document.getElementById('hello').style.color = 'red';
+        document.getElementById('hello').style.fontSize = '16px';
+        document.getElementById('hi').innerHTML = 'JS 고수에요';
+        
+        function alertButton(state) {
+            document.getElementById('alert').style.display = state;
+        }
+
+        function plus(a, b) {
+            window.print(a + b)
+        }
+
+        function loginButton(tagId, text,  state,) {
+            document.getElementById(tagId).innerHTML = text;
+            document.getElementById(tagId).style.display = state;
+        }
+    </script>
+
+</body>
+</html>
